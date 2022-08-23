@@ -1,0 +1,209 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+#menu {
+    margin-left: 10px;
+}
+
+#index{
+    margin-top: 50px;
+}
+
+#myFooter {
+    background-color: #212529;
+    color: white;
+    padding-top: 30px;
+}
+
+    #myFooter .footer-copyright {
+        background-color: #000000;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        text-align: center;
+    }
+
+    #myFooter .row {
+        margin-bottom: 60px;
+    }
+
+    #myFooter .navbar-brand {
+        margin-top: 45px;
+        height: 65px;
+    }
+
+    #myFooter .footer-copyright p {
+        margin: 10px;
+        color: #ccc;
+    }
+
+    #myFooter ul {
+        list-style-type: none;
+        padding-left: 0;
+        line-height: 1.7;
+    }
+
+    #myFooter h5 {
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    #myFooter h2 a {
+        font-size: 50px;
+        text-align: center;
+        color: #fff;
+    }
+
+    #myFooter a {
+        color: #d2d1d1;
+        text-decoration: none;
+    }
+
+        #myFooter a:hover,
+        #myFooter a:focus {
+            text-decoration: none;
+            color: white;
+        }
+
+    #myFooter .social-networks {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 16px;
+    }
+
+        #myFooter .social-networks a {
+            font-size: 32px;
+            color: #f9f9f9;
+            padding: 10px;
+            transition: 0.2s;
+        }
+
+            #myFooter .social-networks a:hover {
+                text-decoration: none;
+            }
+
+    #myFooter .linkedin:hover {
+        color: #0077e2;
+       
+    }
+
+    #myFooter .github:hover {
+        color: purple;
+    }
+
+   
+
+    #myFooter .btn {
+        color: white;
+        background-color: #d84b6b;
+        border-radius: 20px;
+        border: none;
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        line-height: 25px;
+    }
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+}
+
+
+/* CSS utilizado para posicionar o rodapé no final da página. */
+/* Você pode remover isso. */
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    min-height: 200px;
+}
+
+#myFooter {
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+}

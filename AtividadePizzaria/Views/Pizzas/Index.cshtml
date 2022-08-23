@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Pizza>
+
+@{
+    ViewData["Title"] = "Pizzas";
+}
+
+<partial name="_NovoItem" model="nameof(Pizza)" />
+<link rel="stylesheet" href="~/css/site.css" />
+<div class="row" id="index">
+    <div class="col-md-10 offset-md-1">
+
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Ações</th>
+                    <th>@Html.DisplayNameFor(model => model.FotoURL)</th>
+                    <th>@Html.DisplayNameFor(model => model.Nome)</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var sabor in Model)
+                {
+
+                    <tr>
+                        <td>
+                            <div class="d-flex flex-column col-6">
+                                <a class="btn btn-outline-secondary mt-2" asp-action="Atualizar" asp-route-id="@sabor.Id">
+                                    <i class="fa-solid fa-file-pen"></i>
+                                    Editar
+                                </a>
+
+                                <a class="btn btn-outline-secondary mt-2" asp-action="Detalhes" asp-route-id="@sabor.Id">
+                                    <i class="fa-solid fa-eye"></i>
+                                    Ver
+                                </a>
+
+                                <a class="btn btn-outline-secondary mt-2" asp-action="Deletar" asp-route-id="@sabor.Id">
+                                    <i class="fa-solid fa-ban"></i>
+                                    Excluir
+                                </a>
+                            </div>
+                        </td>
+                        <td class="align-middle">
+                            <img src="@sabor.FotoURL" style="max-width:100px" alt="@sabor.Nome">
+                        </td>
+                        <td class="align-middle">@sabor.Nome</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>

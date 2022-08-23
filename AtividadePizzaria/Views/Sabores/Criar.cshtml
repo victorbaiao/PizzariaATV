@@ -1,0 +1,35 @@
+﻿@model AtividadePizzaria.Models.ViewModels.RequestDTO.PostSaborVM
+@{
+    ViewData["Title"] = "Adicionar novo Sabor";
+}
+
+<div class="row align-items-center">
+    <div class="col-md-8 offset-md-3">
+        <p>
+            <h1>Criar novo Sabor</h1>
+        </p>
+        <div class="row">
+            <div class="col-md-6 ">
+                <form asp-action="Criar">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Nome" class="control-label"></label>
+                        <input asp-for="Nome" class="form-control" />
+                        <span asp-validation-for="Nome" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label asp-for="FotoURL" class="control-label"></label>
+                        <input asp-for="FotoURL" class="form-control" />
+                        <span asp-validation-for="FotoURL" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input type="submit" value="Criar" class="btn btn-outline-success float-right" />
+                        <a class="btn btn-outline-secondary" asp-action="Index">Listar Sabores</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

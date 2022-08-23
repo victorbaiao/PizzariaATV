@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/atividadepizzariadbserver/databases/AtividadePizzaria_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:SqlServer",
+      "dynamicId": null
+    }
+  }
+}

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Tamanho>
+
+@{
+    ViewData["Title"] = "Tamanhos";
+}
+
+<partial name="_NovoItem" model="nameof(Tamanho)" />
+
+<div class="row" id="index">
+    <div class="col-md-10 offset-md-1">
+        
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Ações</th>
+                    <th>@Html.DisplayNameFor(model => model.Nome)</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var tamanho in Model)
+                {
+
+                    <tr>
+                        <td>
+                            <div class="d-flex flex-column col-6">
+                                <a class="btn btn-outline-secondary mt-2" asp-action="Atualizar" asp-route-id="@tamanho.Id">
+                                    <i class="fa-solid fa-file-pen"></i>
+                                    Editar
+                                </a>
+
+                                <a class="btn btn-outline-secondary mt-2" asp-action="Detalhes" asp-route-id="@tamanho.Id">
+                                    <i class="fa-solid fa-eye"></i>
+                                    Ver
+                                </a>
+
+                                <a class="btn btn-outline-secondary mt-2" asp-action="Deletar" asp-route-id="@tamanho.Id">
+                                    <i class="fa-solid fa-ban"></i>
+                                    Excluir
+                                </a>
+                            </div>
+                        </td>
+                        <td class="align-middle">
+                            
+                        </td>
+                        <td class="align-middle">@tamanho.Nome</td>
+                   
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
